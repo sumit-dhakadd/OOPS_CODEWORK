@@ -7,7 +7,7 @@ class Simple_Interest {
     float year;
 
 public:
-    Simple_Interest(int Amount = 0, float rate = 0.0f, float year = 0.0f) {
+    Simple_Interest(Amount = 0, rate = 0.0f, year = 0.0f) {
         this->Amount = Amount;
         this->rate = rate;
         this->year = year;
