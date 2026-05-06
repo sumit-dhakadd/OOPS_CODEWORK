@@ -1,30 +1,23 @@
 #include<iostream>
 using namespace std;
 
-class Simple_Interest {
-    int Amount;
-    float rate;
-    float year;
-
+class Interest {
 public:
-    Simple_Interest(int Amount = 0,float rate = 0.0f,float year = 0.0f) {
-        this->Amount = Amount;
-        this->rate = rate;
-        this->year = year;
-    }
 
-    void Show_Interest() {
-        float interest = (Amount * rate * year) / 100;
-        cout << "Interest : " << interest << endl;
+    float simpleInterest(float p, float r = 5, float t = 2) {
+        return (p * r * t) / 100;
     }
 };
 
 int main() {
-    Simple_Interest S1(1000, 2.5, 1.5);
-    Simple_Interest S2(1000, 2, 1);
-    Simple_Interest S3;
 
-    S1.Show_Interest();
-    S2.Show_Interest();
-    S3.Show_Interest();
+    Interest obj;
+
+    cout<<"SI = "<<obj.simpleInterest(1000)<<endl;
+
+    cout<<"SI = "<<obj.simpleInterest(1000, 10)<<endl;
+
+    cout<<"SI = "<<obj.simpleInterest(1000, 10, 5)<<endl;
+
+    return 0;
 }
