@@ -22,7 +22,9 @@ public:
 int main() {
     Simple_Interest S1(1000, 2.5, 1.5);
     Simple_Interest S2(1000, 2, 1);
+    Simple_Interest S3;
 
     S1.Show_Interest();
     S2.Show_Interest();
+    S3.Show_Interest();
 }
